@@ -5,9 +5,14 @@ class Hello {
 }
 //kotlin main方法可不用寫在class裡面，java要寫在class內
 fun main() {
+    val p = Person()
+    p.hello()
+
     println("Hello Kotlin!")
 //可變變數var 不可變變數val
     val age = 20
+    //Byte,Short,Int,Long
+    val population = 9999L//除了Long用大寫其餘小寫
     println(age.inc())
     println(age)
     var name = "kage"
@@ -15,6 +20,13 @@ fun main() {
     name = "hank"
     println(name)
     val weight:Float=66.5f
+    //val weight:Float=66.5.toFloat()
     val c ='a'
     println(c)
+    //Float(32位元),Double(64位元)
+    //val weight = 65.5f
+    //ture,false
+    val isAdult = false
+    //Char
+    val b ='A'
 }
